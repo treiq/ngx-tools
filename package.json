@@ -10,8 +10,8 @@
     "type": "git",
     "url": "git+https://github.com/treiq/ngx-tools.git"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "alexcibotari",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/treiq/ngx-tools/issues"
   },
