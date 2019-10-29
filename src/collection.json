@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "ngx-tools": {
+    "extract-i18n": {
       "description": "A blank schematic.",
-      "factory": "./ngx-tools/index#ngxTools"
+      "factory": "./extract-i18n/index"
     }
   }
 }
