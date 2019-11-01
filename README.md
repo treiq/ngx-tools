@@ -23,9 +23,9 @@ Merge i18n JSON files in one.
 ## Testing
 In your project, link the Schematics we just built:
 
-``npm link $PATH_TO_SCHEMATIC_PROJECT``
+``npm link @treiq/ngx-tools``
 
-Replace $PATH_TO_SCHEMATIC_PROJECT with the path to the **ngx-tools** project’s root. Note that users will install instead of linking, this is just to iterate faster locally while developing.
+Note that users will install instead of linking, this is just to iterate faster locally while developing.
 Once your schematic project is linked, you can use ng generate to call your schematics:
 
 `ng g @treiq/ngx-tools:i18n-merge`
