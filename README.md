@@ -16,9 +16,9 @@ Merge i18n JSON files in one.
 #### Arguments
 | Name          	| Description                                   	| Default value |
 |-----------------	|--------------------------------------------------	|--------------------------------|
-| cwd           	| The current working directory in which to search. |'./src/app/'|
-| pattern       	| File pattern selection.                           |'.i18n.json$'|
-| output         	| Output file path that will contain all merged value.|'./src/assets/i18n/en.json'|
+| cwd           	| The current working directory in which to search. |./src/app/|
+| pattern       	| File pattern selection.                           |.i18n.json$|
+| output         	| Output file path that will contain all merged value.|./src/assets/i18n/en.json|
 
 ## Testing
 In your project, link the @treiq/ngx-tools we just built:
