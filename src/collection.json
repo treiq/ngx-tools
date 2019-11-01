@@ -1,9 +1,9 @@
 {
   "$schema": "../node_modules/@angular-devkit/schematics/collection-schema.json",
   "schematics": {
-    "extract-i18n": {
+    "i18n-merge": {
       "description": "A blank schematic.",
-      "factory": "./extract-i18n/index"
+      "factory": "./i18n-merge/index"
     }
   }
 }

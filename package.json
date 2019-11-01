@@ -1,13 +1,16 @@
 {
   "name": "@treiq/ngx-tools",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "",
   "scripts": {
     "build": "tsc -p tsconfig.json",
     "test": "npm run build && jasmine src/**/*_spec.js"
   },
   "keywords": [
-    "schematics"
+    "schematics",
+    "ngx",
+    "angular",
+    "i18n"
   ],
   "repository": {
     "type": "git",

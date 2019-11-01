@@ -1,29 +1,31 @@
 # ngx-tools
 
-# Getting Started With Schematics
+Angular command line tool to facilitate application development and build.
 
-This repository is a basic Schematic implementation that serves as a starting point to create and publish Schematics to NPM.
+## Install
+``npm i -D @treiq/ngx-tools``
 
-### Testing
+## Usage
+In root fo your Angular project you can run ``ng generate @treiq/ngx-tools:<command>`` or alias ``ng g @treiq/ngx-tools:<command>`` where `<commands>` are list of commands enumerated below.
+Example : ``ng generate @treiq/ngx-tools:i18n-merge`` or alias ``ng g @treiq/ngx-tools:i18n-merge``
 
-To test locally, install `@angular-devkit/schematics-cli` globally and use the `schematics` command line tool. That tool acts the same as the `generate` command of the Angular CLI, but also has a debug mode.
+## Commands
+### i18n-merge
+Merge i18n JSON files in one.
+`ng g @treiq/ngx-tools:i18n-merge`
+#### Arguments
+| Name          	| Description                                   	| Default value |
+|-----------------	|--------------------------------------------------	|--------------------------------|
+| cwd           	| The current working directory in which to search. |'./src/app/'|
+| pattern       	| File pattern selection.                           |'.i18n.json$'|
+| output         	| Output file path that will contain all merged value.|'./src/assets/i18n/en.json'|
 
-Check the documentation with
-```bash
-schematics --help
-```
+## Testing
+In your project, link the Schematics we just built:
 
-### Unit Testing
+``npm link $PATH_TO_SCHEMATIC_PROJECT``
 
-`npm run test` will run the unit tests, using Jasmine as a runner and test framework.
+Replace $PATH_TO_SCHEMATIC_PROJECT with the path to the **ngx-tools** project’s root. Note that users will install instead of linking, this is just to iterate faster locally while developing.
+Once your schematic project is linked, you can use ng generate to call your schematics:
 
-### Publishing
-
-To publish, simply do:
-
-```bash
-npm run build
-npm publish
-```
-
-That's it!
+`ng g @treiq/ngx-tools:i18n-merge`
