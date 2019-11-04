@@ -9,8 +9,11 @@
   "keywords": [
     "schematics",
     "ngx",
+    "ngx-translate",
     "angular",
-    "i18n"
+    "angular-cli",
+    "i18n",
+    "internationalization"
   ],
   "repository": {
     "type": "git",
